@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+  background: linear-gradient(-45deg, #4677ff, rgb(255, 154, 255), #e1c8fd, rgb(244, 221, 255));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+}
+
+}
+
+:root {
+    --text-color: #183153;
+    --primary-color: #48ff38;
+    --white-color: #CCFFFF;
+    --black-color: #330000;
+    --grey-color: #af9494;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+    /* scroll-behavior: smooth; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 100%;
+    background-color: red;
+    color: var(--white-color);
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.search {
+    display: flex;
+    margin: 25px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white-color);
+}
+
+.search .search-icon {
+    padding: 9px;
+    color: var(--black-color);
+    border: 10px;
+    border-color: var(--grey-color);
+}
+
+.search .search-icon:hover {
+    cursor: pointer;
+}
+
+.search .search-input {
+    border-style: none;
+    border: none;
+    background-color: var(--white-color);
+    padding-right: 10px;
+}
+
+.search .search-input:focus {
+    outline: none;
+}
+
+.account {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.cart {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+}
+
+i:hover {
+    cursor: pointer;
+}
