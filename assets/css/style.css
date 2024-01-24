@@ -53,26 +53,31 @@ a {
     width: 100%;
     background-color: red;
     color: var(--white-color);
+    user-select: none;
 }
 
 .logo {
+    margin-top: 3px;
     align-items: center;
-    
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 40px;
 }
 
 .search {
     display: flex;
-    margin: 25px;
+    margin: 12px;
     align-items: center;
     justify-content: space-between;
     background-color: var(--white-color);
+    overflow: hidden;
+    width: 177px;
+    height: 25px;
 }
 
 .search .search-icon {
-    padding: 9px;
+    padding: 10px 5px 11px 5px;
     color: var(--black-color);
-    border: 10px;
-    border-color: var(--grey-color);
+    border-left: 0.1px solid var(--grey-color);
 }
 
 .search .search-icon:hover {
@@ -83,7 +88,8 @@ a {
     border-style: none;
     border: none;
     background-color: var(--white-color);
-    padding-right: 10px;
+    width: 150px;
+    padding: 0 11px;
 }
 
 .search .search-input:focus {
@@ -106,6 +112,6 @@ a {
     width: 120px;
 }
 
-i:hover {
+.cart:hover {
     cursor: pointer;
 }
