@@ -53,7 +53,7 @@ a {
     justify-content: space-evenly;
     height: 50px;
     width: 100%;
-    background-color: red;
+    background-color: rgb(255, 108, 108);
     color: var(--white-color);
     user-select: none;
 }
@@ -120,4 +120,8 @@ a {
 
 .test {
     width: 100px;
+}
+
+header {
+    background-color: red;
 }
