@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
 }
- 
+
 /* body {
   background: linear-gradient(-45deg, #4677ff, rgb(255, 154, 255), #e1c8fd, rgb(244, 221, 255));
   background-size: 400% 400%;
@@ -15,18 +15,20 @@
   height: 100vh;
 } */
 
-@keyframes gradient {
+/* @keyframes gradient {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-}
 
-}
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+} */
 
 :root {
     --text-color: #183153;
