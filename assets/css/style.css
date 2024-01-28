@@ -124,4 +124,7 @@ a {
 
 header {
     background-color: red;
+    width: 100%;
+    height: 20px;
+    color: var(--white-color);
 }
