@@ -115,3 +115,7 @@ a {
 .cart:hover {
     cursor: pointer;
 }
+
+.test {
+    width: 100px;
+}
