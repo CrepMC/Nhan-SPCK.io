@@ -124,9 +124,31 @@ a {
 
 header {
     display: flex;
+    align-items: center;
     background-color: red;
     width: 100%;
     height: 30px;
     color: var(--white-color);
     padding: 0 0 0 70px;
 }
+
+.about,
+.tet-gift-baskets,
+.tet-gift,
+.tet-gift-bag,
+.tet-wine,
+.news,
+.contact {
+    margin: 0 15px 0 15px;
+    height: 30px;
+    padding: 10px;
+}
+
+.about,
+.tet-gift-bag,
+.tet-wine,
+.news,
+.contact:hover {}
+
+.tet-gift-baskets,
+.tet-gift:hover {}
