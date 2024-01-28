@@ -7,13 +7,13 @@
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
 }
-
-body {
+ 
+/* body {
   background: linear-gradient(-45deg, #4677ff, rgb(255, 154, 255), #e1c8fd, rgb(244, 221, 255));
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
-}
+} */
 
 @keyframes gradient {
     0% {
