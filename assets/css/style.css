@@ -132,6 +132,7 @@ header {
     padding: 0 0 0 70px;
 }
 
+.home,
 .about,
 .tet-gift-baskets,
 .tet-gift,
@@ -139,16 +140,36 @@ header {
 .tet-wine,
 .news,
 .contact {
-    margin: 0 15px 0 15px;
-    height: 30px;
-    padding: 10px;
+    margin: 0 19px 0 19px;
 }
 
 .about,
+.tet-gift,
+.tet-gift-baskets,
 .tet-gift-bag,
 .tet-wine,
 .news,
-.contact:hover {}
+.contact:hover {
+    cursor: pointer;
+}
 
 .tet-gift-baskets,
-.tet-gift:hover {}
+.tet-gift-bag {}
+
+.fa-caret-down {
+    transform: rotate(0deg);
+    transition: transform 450ms ease;
+}
+
+.fa-caret-down:hover {
+    transform: rotate(-180deg);
+}
+
+.tet-gif-item {
+    display: block;
+
+}
+
+.tet-gif-item:hover {
+    display: block;
+}

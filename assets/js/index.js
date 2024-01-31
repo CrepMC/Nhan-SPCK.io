@@ -12,6 +12,9 @@
 // })
 
 document.addEventListener('contextmenu', function (e) {
-    e.preventDefault();
-  });
-  
+  e.preventDefault();
+});
+
+document.querySelector(".fa-caret-down").addEventListener('hover', function () {
+  document.querySelector("tet-gif-item").style.display = "block"
+});
