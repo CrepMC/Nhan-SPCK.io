@@ -15,6 +15,15 @@ document.addEventListener('contextmenu', function (e) {
   e.preventDefault();
 });
 
-document.querySelector(".fa-caret-down").addEventListener('hover', function () {
-  document.querySelector("tet-gif-item").style.display = "block"
-});
+function handleMouseOver(caretId, itemClass) {
+  document.getElementById(caretId).addEventListener('mouseover', function () {
+    document.querySelector('.' + itemClass).style.display = 'block';
+  });
+
+  document.getElementById(caretId).addEventListener('mouseout', function () {
+    document.querySelector('.' + itemClass).style.display = 'none';
+  });
+}
+
+handleMouseOver('caret-down-1', 'tet-gift-item');
+handleMouseOver('caret-down-2', 'tet-gift-item');
