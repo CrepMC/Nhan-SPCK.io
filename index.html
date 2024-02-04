@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./page/assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
@@ -31,8 +31,10 @@
   </div>
   <header>
     <div class="home">
-      <i class="fa-solid fa-house"></i>
-      Trang chủ
+      <a href="#">
+        <i class="fa-solid fa-house"></i>
+        Trang chủ
+      </a>
     </div>
     <div class="about">Giới thiệu</div>
     <div class="tet-gift-baskets">
@@ -48,13 +50,28 @@
     <div class="news">Tin tức</div>
     <div class="contact">Liên hệ</div>
   </header>
-  <div class="tet-gift-item"></div>
+  <div class="tet-gift-item" id="tet-gift-item">
+    <ul id="list-of-item">
+      <p id="title-of-item">Giỏ quà tết</p>
+      <li id="item"><a href="./page/order/order1-1/">Giỏ quà hạnh phúc</a></li>
+      <li id="item"><a href="#">Giỏ quà may mắn</a></li>
+      <li id="item"><a href="#">Giỏ quà tài lộc</a></li>
+    </ul>
+    <ul id="list-of-item">
+      <p id="title-of-item">Hộp quà tết</p>
+      <li id="item"><a href="#">Hộp quà hạnh phúc</a></li>
+      <li id="item"><a href="#">Hộp quà phú quý</a></li>
+      <li id="item"><a href="#">Hộp quà bình an</a></li>
+    </ul>
+  </div>
 
   <aside></aside>
 
-  <article></article>
+  <article>
+
+  </article>
   <footer></footer>
-  <script src="./page/js/index.js"></script>
+  <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

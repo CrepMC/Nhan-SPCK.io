@@ -9,13 +9,15 @@
 }
 
 body {
-    background: linear-gradient(-45deg, #4677ff, rgb(255, 154, 255), #e1c8fd, rgb(244, 221, 255));
-    background-size: 900% 900%;
+    background: url(../img/background-tet-2023-19.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     animation: gradient 15s ease infinite;
     height: 100vh;
 }
 
-@keyframes gradient {
+/* @keyframes gradient {
     0% {
         background-position: 0% 50%;
     }
@@ -28,7 +30,7 @@ body {
         background-position: 0% 50%;
     }
 
-}
+} */
 
 :root {
     --text-color: #183153;
@@ -131,6 +133,7 @@ header {
     height: 30px;
     color: var(--white-color);
     padding: 0 0 0 70px;
+    user-select: none;
 }
 
 .home,
@@ -162,6 +165,7 @@ header {
 .fa-caret-down {
     transform: rotate(0deg);
     transition: transform 450ms ease;
+    padding: 30px 0 30px 0;
 }
 
 .fa-caret-down:hover {
@@ -170,12 +174,25 @@ header {
 
 .tet-gift-item {
     display: none;
+    justify-content: space-around;
+    text-align: center;
     position: sticky;
     width: 90%;
     height: 80%;
     margin: 0 0 0 5%;
-    background-color: #ffffff;
+    background-color: #ff2020;
+    color: #CCFFFF;
 }
+
+#list-of-item {
+    padding: 40px;
+}
+
+#list-of-item #title-of-item {
+    font-size: 20px;
+}
+
+#list-of-item#title-of-item#item {}
 
 .tet-gif-item:hover {
     display: block;

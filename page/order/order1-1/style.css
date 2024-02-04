@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background: url(../../../assets/img/background-tet-2023-19.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+/* @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+} */
+
+:root {
+    --text-color: #183153;
+    --primary-color: #48ff38;
+    --white-color: #CCFFFF;
+    --black-color: #330000;
+    --grey-color: #af9494;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+    /* scroll-behavior: smooth; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(255, 108, 108);
+    color: var(--white-color);
+    user-select: none;
+}
+
+.logo {
+    margin-top: 3px;
+    align-items: center;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 40px;
+}
+
+.search {
+    display: flex;
+    margin: 12px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    overflow: hidden;
+    width: 177px;
+    height: 25px;
+}
+
+.search .search-icon {
+    padding: 10px 5px 11px 5px;
+    color: var(--black-color);
+    border-left: 0.1px solid var(--grey-color);
+}
+
+.search .search-icon:hover {
+    cursor: pointer;
+}
+
+.search .search-input {
+    border-style: none;
+    border: none;
+    background-color: var(--white-color);
+    width: 150px;
+    padding: 0 11px;
+}
+
+.search .search-input:focus {
+    outline: none;
+}
+
+.account {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.cart {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.cart:hover {
+    cursor: pointer;
+}
+
+.test {
+    width: 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: red;
+    color: #CCFFFF;
+    width: 100%;
+    height: 30px;
+    color: var(--white-color);
+    padding: 0 0 0 70px;
+    user-select: none;
+}
+
+.home,
+.about,
+.tet-gift-baskets,
+.tet-gift,
+.tet-gift-bag,
+.tet-wine,
+.news,
+.contact {
+    margin: 0 19px 0 19px;
+}
+
+.home:hover,
+.about:hover,
+.tet-gift:hover,
+.tet-gift-baskets:hover,
+.tet-gift-bag:hover,
+.tet-wine:hover,
+.news:hover,
+.contact:hover {
+    cursor: pointer;
+    color: #d3ff58;
+}
+
+.tet-gift-baskets,
+.tet-gift-bag {}
+
+.fa-caret-down {
+    transform: rotate(0deg);
+    transition: transform 450ms ease;
+    padding: 30px 0 30px 0;
+}
+
+.fa-caret-down:hover {
+    transform: rotate(-180deg);
+}
+
+.tet-gift-item {
+    display: none;
+    justify-content: space-around;
+    text-align: center;
+    position: sticky;
+    width: 90%;
+    height: 80%;
+    margin: 0 0 0 5%;
+    background-color: #ff2020;
+    color: #CCFFFF;
+}
+
+#list-of-item {
+    padding: 40px;
+}
+
+#list-of-item #title-of-item {
+    font-size: 20px;
+}
+
+#list-of-item#title-of-item#item {}
+
+.tet-gif-item:hover {
+    display: block;
+}
