@@ -38,6 +38,11 @@ function showInfo() {
                             isFormValid = false;
                         } else {
                             console.log(`${placeholder}: ${input.value}`);
+                            alert(`Đăng nhập thành công`)
+                            function newDoc() {
+                                window.location.assign("https://crepmc.github.io/Nhan-SPCK.io/")
+                            }
+                            newDoc()
                         }
                     }
                 }

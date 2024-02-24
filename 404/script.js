@@ -36,8 +36,11 @@ function clickButton() {
         document.getElementById('main-page').style.boxShadow = '0px 2px 0px 2px rgba(0, 0, 0, 0.37)'
         document.getElementById('main-page').style.translate = '0 -2px'
     })
-}; +
+};
 
-    handleMouseOver('caret-down-1', 'tet-gift-item');
+
+clickButton()
+
+handleMouseOver('caret-down-1', 'tet-gift-item');
 handleMouseOver('caret-down-2', 'tet-gift-item');
 handleMouseOver('tet-gift-item', 'tet-gift-item');
