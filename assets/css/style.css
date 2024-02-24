@@ -185,7 +185,7 @@ header {
     z-index: 10000;
     text-align: center;
     width: 90%;
-    height: 80%;
+    height: 30%;
     margin: 0 0 0 5%;
     background-color: #ff2020;
     color: #CCFFFF;
@@ -193,10 +193,15 @@ header {
 
 #list-of-item {
     padding: 40px;
+
 }
 
 #list-of-item #title-of-item {
     font-size: 20px;
+}
+
+#list-of-item #item {
+    font-size: 14px;
 }
 
 #list-of-item#title-of-item#item {}
@@ -352,7 +357,7 @@ article {
 footer {
     position: absolute;
     z-index: 10;
-    top: 180%;
+    top: 200%;
     width: 100%;
     background-color: #f8f9fa;
     padding: 20px;
@@ -375,6 +380,28 @@ footer p {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
+}
+
+.filter-options label {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.banner {
+    display: flex;
+    width: auto;
+    height: 212px;
+}
+
+.banner img {
+    height: 158px;
+}
+
+#option1,
+#option2,
+#option3 {
+    width: 20px;
+    height: 20px;
 }
 
 #bg_red {

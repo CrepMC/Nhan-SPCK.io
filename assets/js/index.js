@@ -19,6 +19,22 @@ document.addEventListener('contextmenu', function (e) {
   })
 });
 
+// function handleMouseOverTheWordToCaretDown(caretId, itemClass) {
+//   document.querySelector('.' + caretId).addEventListener('mouseover', function () {
+//     document.querySelector('#' + itemClass).style.transform = 'rotate(-180deg)';
+//     document.querySelector('#' + itemClass).style.transition = 'transform 450ms ease';
+//   });
+//   document.querySelector(caretId).addEventListener('mouseout', function () {
+//     document.querySelector('#' + itemClass).style.transform = 'rotate(0deg)';
+//   });
+// }
+
+// handleMouseOverTheWordToCaretDown('tet-gift-baskets', 'caret-down-1');
+// handleMouseOverTheWordToCaretDown('tet-gift', 'caret-down-2');
+// handleMouseOverTheWordToCaretDown('tet-gift-bag', 'caret-down-3');
+// handleMouseOverTheWordToCaretDown('tet-wine', 'caret-down-4');
+// handleMouseOverTheWordToCaretDown('contact', 'caret-down-5');
+
 function handleMouseOver(caretId, itemClass) {
   document.querySelector(caretId).addEventListener('mouseover', function () {
     document.querySelector('.' + itemClass).style.display = 'flex';
@@ -34,6 +50,11 @@ handleMouseOver('.tet-gift', 'tet-gift-item');
 handleMouseOver('#caret-down-1', 'tet-gift-item');
 handleMouseOver('#caret-down-2', 'tet-gift-item');
 handleMouseOver('#caret-down-3', 'tet-gift-item');
+handleMouseOver('#caret-down-4', 'tet-gift-item');
+handleMouseOver('#caret-down-5', 'tet-gift-item');
+handleMouseOver('.tet-gift-bag', 'tet-gift-item');
+handleMouseOver('.tet-wine', 'tet-gift-item');
+handleMouseOver('.contact', 'tet-gift-item');
 handleMouseOver('#tet-gift-item', 'tet-gift-item');
 
 function performSearch() {

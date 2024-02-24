@@ -32,12 +32,12 @@ handleMouseOver('caret-down-3', 'tet-gift-item');
 handleMouseOver('tet-gift-item', 'tet-gift-item');
 
 function performSearch() {
-    var searchTerm = document.querySelector(".search-input").value;
+    // var searchTerm = document.querySelector(".search-input").value;
 
     // Check if the search term is not empty
 
     // Construct the search URL
-    var searchURL = "../../page/search/" + encodeURIComponent(searchTerm);
+    var searchURL = "../../page/search/" // + encodeURIComponent(searchTerm);
 
     // Redirect to the search results page
     window.location.href = searchURL;
