@@ -1,99 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title></title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-
-<body>
-  <div class="navbar">
-    <div class="logo">TẾT 2024</div>
-    <div class="search">
-      <input type="text" maxlength="10000000000000000000" id="search-input" class="search-input" />
-      <div class="search-icon">
-        <button onclick="performSearch()">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </div>
-      <div id="search-results"></div>
-    </div>
-    <div class="account">
-      <a href="./page/register.html" class="register">Đăng ký</a>
-      <a href="./page/login.html" class="login">Đăng nhập</a>
-    </div>
-    <div class="cart">
-      <a href="./page/cart/"><i class="fa-solid fa-cart-shopping"></i>
-        Giỏ hàng</a>
-    </div>
-  </div>
-  <header>
-    <div class="home">
-      <a href="#">
-        <i class="fa-solid fa-house"></i>
-        Trang chủ
-      </a>
-    </div>
-    <div class="about">Giới thiệu</div>
-    <div class="tet-gift-baskets">
-      Giỏ quà Tết
-      <i class="fa-solid fa-caret-down" id="caret-down-2"></i>
-    </div>
-    <div class="tet-gift">
-      Hộp quà Tết
-      <i class="fa-solid fa-caret-down" id="caret-down-1"></i>
-    </div>
-    <div class="tet-gift-bag">Túi quà Tết</div>
-    <div class="tet-wine">Rượu Tết</div>
-    <div class="news">Tin tức</div>
-    <div class="contact">
-      Liên hệ
-      <i class="fa-solid fa-caret-down" id="caret-down-3"></i>
-    </div>
-  </header>
-  <div class="tet-gift-item" id="tet-gift-item">
-    <ul id="list-of-item">
-      <p id="title-of-item">Giỏ quà tết</p>
-      <li id="item"><a href="./page/order/order1-1/">Giỏ quà hạnh phúc</a></li>
-      <li id="item"><a href="#">Giỏ quà may mắn</a></li>
-      <li id="item"><a href="#">Giỏ quà tài lộc</a></li>
-    </ul>
-    <ul id="list-of-item">
-      <p id="title-of-item">Hộp quà tết</p>
-      <li id="item"><a href="#">Hộp quà hạnh phúc</a></li>
-      <li id="item"><a href="#">Hộp quà phú quý</a></li>
-      <li id="item"><a href="#">Hộp quà bình an</a></li>
-    </ul>
-    <ul id="list-of-item">
-      <p id="title-of-item">Liên hệ</p>
-      <li id="item-but-not-a-link"></li>
-      <li id="item-but-not-a-link">Địa chỉ: 72 Ngô Xuân Quảng, Gia Lâm, Hà Nội</li>
-      <li id="item-but-not-a-link">SĐT: </li>
-      <li id="item-but-not-a-link">Hotline: 09******12</li>
-    </ul>
-  </div>
-
-  <aside></aside>
-
-  <article>
-    <img src="./assets/img/bg_title_red.png" alt="bg_title_red" class="bg_title_red">
-    <div class="product">
-      <div class="product-title1"></div>
-      <div class="product-title2"></div>
-    </div>
-  </article>
-  <footer></footer>
-  <script src="./assets/js/index.js"></script>
-
-</body>
-
-</html> <!--jdhj -->
-
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -106,342 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Kanit', sans-serif;
-      }
-
-      body {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        animation: gradient 15s ease infinite;
-        height: 100vh;
-      }
-
-      .background {
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 145vh;
-      }
-
-      button {
-        border: none;
-        outline: none;
-        background-color: transparent;
-        cursor: pointer;
-      }
-
-      :root {
-        --text-color: #183153;
-        --primary-color: #48ff38;
-        --white-color: #CCFFFF;
-        --black-color: #330000;
-        --grey-color: #af9494;
-      }
-
-      ul {
-        list-style: none;
-      }
-
-      a {
-        color: unset;
-        text-decoration: none;
-        /* scroll-behavior: smooth; */
-      }
-
-      .navbar {
-        display: flex;
-        position: relative;
-        justify-content: space-evenly;
-        height: 50px;
-        width: 100%;
-        background-color: rgb(255, 108, 108);
-        color: var(--white-color);
-        user-select: none;
-        z-index: 3;
-      }
-
-      .logo {
-        margin-top: 3px;
-        align-items: center;
-        font-family: 'Dancing Script', sans-serif;
-        font-size: 40px;
-      }
-
-      .search {
-        display: flex;
-        margin: 12px;
-        align-items: center;
-        justify-content: space-between;
-        background-color: var(--white-color);
-        overflow: hidden;
-        width: 177px;
-        height: 25px;
-      }
-
-      .search .search-icon {
-        padding: 10px 5px 11px 5px;
-        color: var(--black-color);
-        border-left: 0.1px solid var(--grey-color);
-      }
-
-      .search .search-icon:hover {
-        cursor: pointer;
-      }
-
-      .search .search-input {
-        border-style: none;
-        border: none;
-        background-color: var(--white-color);
-        width: 150px;
-        padding: 0 11px;
-      }
-
-      .search .search-input:focus {
-        outline: none;
-      }
-
-      .account {
-        display: flex;
-        padding: 10px;
-        align-items: center;
-        justify-content: space-between;
-        width: 200px;
-      }
-
-      .cart {
-        display: flex;
-        padding: 10px;
-        align-items: center;
-        justify-content: space-between;
-        width: 120px;
-      }
-
-      .cart:hover {
-        cursor: pointer;
-      }
-
-      .test {
-        width: 100px;
-      }
-
-      header {
-        display: flex;
-        align-items: center;
-        position: relative;
-        background-color: red;
-        color: #CCFFFF;
-        width: 100%;
-        height: 30px;
-        color: var(--white-color);
-        padding: 0 0 0 70px;
-        user-select: none;
-        z-index: 2;
-      }
-
-      .home,
-      .about,
-      .tet-gift-baskets,
-      .tet-gift,
-      .tet-gift-bag,
-      .tet-wine,
-      .news,
-      .contact {
-        margin: 0 19px 0 19px;
-      }
-
-      .home:hover,
-      .about:hover,
-      .tet-gift:hover,
-      .tet-gift-baskets:hover,
-      .tet-gift-bag:hover,
-      .tet-wine:hover,
-      .news:hover,
-      .contact:hover {
-        cursor: pointer;
-        color: #d3ff58;
-      }
-
-      .tet-gift-baskets,
-      .tet-gift-bag {}
-
-      .fa-caret-down {
-        transform: rotate(0deg);
-        transition: transform 450ms ease;
-        padding: 30px 0 30px 0;
-      }
-
-      .fa-caret-down:hover {
-        transform: rotate(-180deg);
-      }
-
-      .tet-gift-item {
-        display: none;
-        justify-content: space-around;
-        position: absolute;
-        z-index: 1;
-        text-align: center;
-        position: sticky;
-        width: 90%;
-        height: 80%;
-        margin: 0 0 0 5%;
-        background-color: #ff2020;
-        color: #CCFFFF;
-      }
-
-      #list-of-item {
-        padding: 40px;
-      }
-
-      #list-of-item #title-of-item {
-        font-size: 20px;
-      }
-
-      #list-of-item#title-of-item#item {}
-
-      .product {
-        display: flex;
-        width: 100%;
-        height: 48px;
-        justify-content: center;
-      }
-
-      .product-title2 {}
-
-      .bg_title_red {
-        position: absolute;
-        top: 80px;
-        left: 8%;
-      }
-
-      .product-title1 {
-        background: url(../img/bg_title_red.png);
-        background-repeat: no-repeat;
-        height: 48px;
-      }
-
-      #item-but-not-a-link {
-        text-align: left;
-      }
-
-      .flickity-button-icon {
-        height: 5%;
-        width: 5%;
-      }
-
-      article {
-        position: sticky;
-        overflow: hidden;
-        border-radius: 10px;
-        z-index: 4;
-        margin-top: 60px;
-        margin-left: 22.151183971%;
-        margin-right: 5.151183971%;
-      }
-
-      .product-img {
-        width: 42.267759563%;
-        height: 860.297px;
-        padding: 0px 0.666120219%;
-        background-color: #CCFFFF;
-      }
-
-      .sale {
-        border-radius: 10px;
-        background-color: #f8d7da;
-        padding: 20px;
-        margin-top: 20px;
-      }
-
-      .sale h2 {
-        color: #721c24;
-        font-size: 24px;
-        margin-bottom: 10px;
-      }
-
-      .sale p {
-        color: #721c24;
-        font-size: 16px;
-      }
-
-      .products {
-        border-radius: 10px;
-        background-color: #cce5ff;
-        padding: 20px;
-        margin-top: 20px;
-      }
-
-      .products h2 {
-        position: relative;
-        z-index: 2;
-        color: #CCFFFF;
-        font-size: 24px;
-        margin-bottom: 10px;
-      }
-
-      .products ul {
-        list-style: none;
-        padding: 0;
-      }
-
-      .products li {
-        color: #0056b3;
-        font-size: 16px;
-        margin-bottom: 5px;
-      }
-
-      .product-row {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-      }
-
-      .product-item {
-        width: 30%;
-        padding: 10px;
-        border: 1px solid #dee2e6;
-        border-radius: 5px;
-      }
-
-      .product-item img {
-        width: 100%;
-        border-radius: 5px;
-      }
-
-      .product-item h3 {
-        color: #343a40;
-        font-size: 18px;
-        margin-top: 10px;
-      }
-
-      .product-item p {
-        color: #6c757d;
-        font-size: 14px;
-      }
-
-      footer {
-        background-color: #f8f9fa;
-        padding: 20px;
-        margin-top: 20px;
-        text-align: center;
-      }
-
-      footer p {
-        color: #6c757d;
-        font-size: 14px;
-      }
-    </style>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
@@ -475,11 +44,11 @@
       </div>
       <div class="about">Giới thiệu</div>
       <div class="tet-gift-baskets">
-        Giỏ quà Tết
+        <span class="tet-title-1">Giỏ quà Tết</span>
         <i class="fa-solid fa-caret-down" id="caret-down-2"></i>
       </div>
       <div class="tet-gift">
-        Hộp quà Tết
+        <span class="tet-title-2">Hộp quà Tết</span>
         <i class="fa-solid fa-caret-down" id="caret-down-1"></i>
       </div>
       <div class="tet-gift-bag">Túi quà Tết</div>
@@ -493,6 +62,7 @@
     <div class="tet-gift-item" id="tet-gift-item">
       <ul id="list-of-item">
         <p id="title-of-item">Giỏ quà tết</p>
+        <li id="item"><a href="#">Giỏ quà yêu thương</a></li>
         <li id="item"><a href="./page/order/order1-1/">Giỏ quà hạnh phúc</a></li>
         <li id="item"><a href="#">Giỏ quà may mắn</a></li>
         <li id="item"><a href="#">Giỏ quà tài lộc</a></li>
@@ -502,6 +72,7 @@
         <li id="item"><a href="#">Hộp quà hạnh phúc</a></li>
         <li id="item"><a href="#">Hộp quà phú quý</a></li>
         <li id="item"><a href="#">Hộp quà bình an</a></li>
+        <li id="item"><a href="#">Hộp quà đắc lộc</a></li>
       </ul>
       <ul id="list-of-item">
         <p id="title-of-item">Liên hệ</p>
@@ -512,7 +83,7 @@
       </ul>
     </div>
     <aside>
-      <div class="filter-options">
+      <div class="filter-options" id="filter">
         <input type="checkbox" id="option1" name="option1" value="option1">
         <label for="option1">Lọc theo giá cao nhất</label><br>
         <input type="checkbox" id="option2" name="option2" value="option2">
@@ -521,130 +92,138 @@
         <label for="option3">Lọc theo đánh giá</label><br>
       </div>
     </aside>
-    <script>
-      // Script for product filtering
-      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-      checkboxes.forEach((checkbox) => {
-        checkbox.addEventListener('change', function () {
-          // Add filtering logic here
-        });
-      });
-    </script>
-    <style>
-      /* CSS for product filtering */
-      .filter-options {
-        position: sticky;
-        z-index: 6;
-        position: absolute;
-        top: 160px;
-        left: 5.151183971%;
-        margin-right: 80%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f9f9f9;
-      }
+    <!-- <section class="discount-banner">
+      <img src="{{link_anh_banner_tet}}" alt="Chương trình khuyến mãi Tết 2024">
+    </section>
 
-      #bg_red {
-        position: absolute;
-        width: 985px;
-        height: 40px;
-        z-index: 1;
-        background-size: cover;
-        top: 170px;
-        left: 0px;
-      }
+    <section>
+      <h2>🏮 Giảm giá Tết - Ăn Tết Ngập Tràn Sắc Màu! 🏮</h2>
+      <div>
+        <p>Giảm giá upto {{phần_trăm_giảm_giá}}% cho mọi đơn hàng!</p>
+        <p>Quà tặng hấp dẫn cho đơn hàng từ {{giá_trị_tối_thiểu}} VND trở lên!</p>
+      </div>
+    </section>
 
-      #bg_red2 {
-        position: absolute;
-        width: 985px;
-        height: 40px;
-        z-index: 1;
-        background-size: cover;
-        top: 328px;
-        left: 0px;
-      }
+    <section class="product-container">
+      <div class="product-card">
+        <img src="{{link_anh_san_pham_1}}" alt="Sản phẩm 1">
+        <h3>{{Sản_phẩm_1}}</h3>
+        <p>Mô tả ngắn về sản phẩm và lý do tại sao nó là lựa chọn hoàn hảo cho mùa Tết.</p>
+      </div>
 
-      .title-img {
-        width: 985px;
-        height: 40px;
-        object-fit: cover;
-      }
-
-      .filter-options input[type="checkbox"] {
-        margin-right: 5px;
-      }
-    </style>
+      <div class="product-card">
+        <img src="{{link_anh_san_pham_2}}" alt="Sản phẩm 2">
+        <h3>{{Sản_phẩm_2}}</h3>
+        <p>Mô tả ngắn về sản phẩm và lợi ích khi khách hàng sử dụng trong dịp Tết.</p>
+      </div>
+    </section> -->
     <article>
-
       <div class="sale">
         <h2>Khuyến mãi hấp dẫn</h2>
         <p>Giảm giá lên đến 50% cho các sản phẩm Tết</p>
       </div>
       <div class="products">
-        <h2>Các mặt hàng nổi bật</h2>
-        <div class="product-row">
+        <div class="product-position">
           <div class="title-img">
+            <h2 class="cart-title-1">Giỏ quà tết</h2>
             <img src="./assets/img/bg_title_red.png" alt="bg_title_red" id="bg_red">
           </div>
-          <div class="product-item">
-            <img src="product1.jpg" alt="Product 1">
-            <h3>Tên Sản Phẩm 1</h3>
-            <p>Mô tả ngắn về sản phẩm 1</p>
+          <div class="product-row-1">
+            <div class="product-item">
+              <a href="4234">
+                <img src="./assets/img/gio-qua-yeu-thuong.png" alt="Product 1" class="product-image">
+                <div class="content">
+                  <h3>Giỏ quà yêu thương</h3>
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <p>1.000.000 đồng</p>
+                </div>
+              </a>
+            </div>
+            <div class="product-item">
+              <a href="4234">
+                <img src="./assets/img/gio-qua-may-man.png" alt="Product 2" class="product-image">
+                <div class="content">
+                  <h3>Giỏ quà may mắn</h3>
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <p>2.300.000 đồng</p>
+                </div>
+              </a>
+            </div>
+            <div class="product-item">
+              <a href="4324">
+                <img src="./assets/img/gio-qua-hanh-phuc.png" alt="Product 3" class="product-image">
+                <div class="content">
+                  <h3>Giỏ quà hạnh phúc</h3>
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <p>1.600.000 đồng</p>
+                </div>
+              </a>
+            </div>
+            <div class="product-item">
+              <a href="4234">
+                <img src="./assets/img/gio-qua-tai-loc.png" alt="Product 4" class="product-image">
+                <div class="content">
+                  <h3>Giỏ quà tài lộc</h3>
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <p>3.000.000 đồng</p>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="product-item">
-            <img src="product2.jpg" alt="Product 2">
-            <h3>Tên Sản Phẩm 2</h3>
-            <p>Mô tả ngắn về sản phẩm 2</p>
-          </div>
-          <div class="product-item">
-            <img src="product3.jpg" alt="Product 3">
-            <h3>Tên Sản Phẩm 3</h3>
-            <p>Mô tả ngắn về sản phẩm 3</p>
-          </div>
-          <div class="product-item">
-            <img src="product3.jpg" alt="Product 4">
-            <h3>Tên Sản Phẩm 4</h3>
-            <p>Mô tả ngắn về sản phẩm 4</p>
-          </div>
-        </div>
-        <h2>Các mặt hàng nổi bật</h2>
-        <div class="product-row">
           <div class="title-img">
+            <h2 class="cart-title-2">Hộp quà tết</h2>
             <img src="./assets/img/bg_title_red.png" alt="bg_title_red" id="bg_red2">
           </div>
-          <div class="product-item">
-            <img src="product1.jpg" alt="Product 1">
-            <h3>Tên Sản Phẩm 1</h3>
-            <p>Mô tả ngắn về sản phẩm 1</p>
-          </div>
-          <div class="product-item">
-            <img src="product2.jpg" alt="Product 2">
-            <h3>Tên Sản Phẩm 2</h3>
-            <p>Mô tả ngắn về sản phẩm 2</p>
-          </div>
-          <div class="product-item">
-            <img src="product3.jpg" alt="Product 3">
-            <h3>Tên Sản Phẩm 3</h3>
-            <p>Mô tả ngắn về sản phẩm 3</p>
-          </div>
-          <div class="product-item">
-            <img src="product3.jpg" alt="Product 4">
-            <h3>Tên Sản Phẩm 4</h3>
-            <p>Mô tả ngắn về sản phẩm 4</p>
+          <div class="product-row-2">
+            <div class="product-item">
+              <a href="4324">
+                <img src="./assets/img/hop-qua-hanh-phuc.png" alt="Product 1" class="product-image">
+                <div class="content">
+                  <h3>Hộp quà hạnh phúc</h3>
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <p>1.200.000 đồng</p>
+                </div>
+              </a>
+            </div>
+            <div class="product-item">
+              <a href="4324">
+                <img src="./assets/img/hop-qua-phu-quy.png" alt="Product 2" class="product-image">
+                <div class="content">
+                  <h3>Hộp quà phú quý</h3>
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <p>2.100.000 đồng</p>
+                </div>
+              </a>
+            </div>
+            <div class="product-item">
+              <a href="4324">
+                <img src="assets/img/hop-qua-binh-an.png" alt="Product 3" class="product-image">
+                <div class="content">
+                  <h3>Hộp quà bình an</h3>
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <p>2.600.000 đồng</p>
+                </div>
+              </a>
+            </div>
+            <div class="product-item">
+              <a href="4324">
+                <img src="./assets/img/hop-qua-dac-loc.png" alt="Product 4" class="product-image">
+                <div class="content">
+                  <h3>Hộp quà đắc lộc</h3>
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <p>1.900.000 đồng</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-
-      <footer>
-        <div class="footer-content">
-          <p>© 2023 Tết Shop. All Rights Reserved</p>
-        </div>
-      </footer>
-
-
-
     </article>
+    <footer>
+      <div class="footer-content">
+        <p>© 2024 Tết Shop. All Rights Reserved</p>
+      </div>
+    </footer>
     <script src="./assets/js/index.js"></script>
   </body>
 
