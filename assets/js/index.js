@@ -43,7 +43,7 @@ function performSearch() {
 
   // Construct the search URL
   // var searchURL = "../page/search/" + encodeURIComponent(searchTerm);
-  var searchURL = "../page/search/#"
+  var searchURL = "./page/search/#"
   // Redirect to the search results page
   window.location.href = searchURL;
 }

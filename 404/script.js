@@ -12,6 +12,17 @@ function handleMouseOver(caretId, itemClass) {
     });
 }
 
+function performSearch() {
+    // var searchTerm = document.querySelector(".search-input").value;
+
+    // Check if the search term is not empty
+
+    // Construct the search URL
+    // var searchURL = "../page/search/" + encodeURIComponent(searchTerm);
+    var searchURL = "./page/search/#"
+    // Redirect to the search results page
+    window.location.href = searchURL;
+}
 
 handleMouseOver('caret-down-1', 'tet-gift-item');
 handleMouseOver('caret-down-2', 'tet-gift-item');
