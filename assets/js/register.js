@@ -14,8 +14,8 @@ function showInfo() {
                 if (input) {
                     const placeholder = input.placeholder;
 
-                    if (placeholder === "Họ và tên") {
-                        if (!/^[a-zA-Z\sáàảãạăắằẳẵặâấầẩẫậéèẻẽẹêếềểễệíìỉĩịóòỏõọôốồổỗộơớờởỡợúùủũụưứừửữựýỳỷỹỵđÁÀẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÉÈẺẼẸÊẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÝỲỶỸỴĐ]+$/u.test(input.value)) {
+                    if (placeholder === "Tên tài khoản") {
+                        if (!/^[a-zA-Z\sáàảãạăắằẳẵặâấầẩẫậéèẻẽẹêếềểễệíìỉĩịóòỏõọôốồổỗộơớờởỡợúùủũụưứừửữựýỳỷỹỵđÁÀẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÉÈẺẼẸÊẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÝỲỶỸỴĐ1234567890]+$/u.test(input.value)) {
                             alert(`Invalid ${placeholder}: Please enter a valid name with only letters`);
                             isFormValid = false;
                         } else {
@@ -39,6 +39,21 @@ function showInfo() {
                         } else {
                             console.log(`${placeholder}: ${input.value}`);
                         }
+                    } else if (placeholder === "Mật khẩu") {
+                        if (!/^[a-zA-Z\sáàảãạăắằẳẵặâấầẩẫậéèẻẽẹêếềểễệíìỉĩịóòỏõọôốồổỗộơớờởỡợúùủũụưứừửữựýỳỷỹỵđÁÀẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÉÈẺẼẸÊẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÝỲỶỸỴĐ1234567890-_@]+$/u.test(input.value)) {
+                            alert(`Invalid ${placeholder}: Please enter a pasword have letter, number and symboy _-&`);
+                            isFormValid = false;
+                        } else {
+                            console.log(`${placeholder}: ${input.value}`);
+                        }
+                    } else if (placeholder === "Nhập lại mật khẩu") {
+                        const passwordInput = document.querySelector('[placeholder="Mật khẩu"]');
+                        if (input.value !== passwordInput.value) {
+                            alert("Mật khẩu nhập lại không khớp với mật khẩu ban đầu.");
+                            isFormValid = false;
+                        } else {
+                            console.log(`${placeholder}: ${input.value}`);
+                        }
                     }
                 }
             });
@@ -46,6 +61,11 @@ function showInfo() {
             if (isFormValid) {
                 // Proceed with further actions (e.g., submitting the form)
                 console.log("Form is valid. Proceed with submission.");
+                alert(`Đăng ký thành công`)
+                function newDoc() {
+                    window.location.assign("https://crepmc.github.io/Nhan-SPCK.io/")
+                }
+                newDoc()
             }
         });
     }

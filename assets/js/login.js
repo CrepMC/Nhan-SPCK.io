@@ -14,18 +14,16 @@ function showInfo() {
                 if (input) {
                     const placeholder = input.placeholder;
 
-                    if (placeholder === "Họ và tên") {
+                    if (placeholder === "Tên tài khoản") {
                         if (!/^[a-zA-Z\sáàảãạăắằẳẵặâấầẩẫậéèẻẽẹêếềểễệíìỉĩịóòỏõọôốồổỗộơớờởỡợúùủũụưứừửữựýỳỷỹỵđÁÀẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÉÈẺẼẸÊẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÝỲỶỸỴĐ]+$/u.test(input.value)) {
                             alert(`Invalid ${placeholder}: Please enter a valid name with only letters`);
                             isFormValid = false;
                         } else {
                             console.log(`${placeholder}: ${input.value}`);
                         }
-                    } else if (placeholder === "Tuổi") {
-                        const age = parseInt(input.value, 10);
-
-                        if (isNaN(age) || age < 13 || age > 99) {
-                            alert(`Invalid ${placeholder}: Please enter a valid age between 13 and 99`)
+                    } else if (placeholder === "Mật khẩu") {
+                        if (!/^[a-zA-Z\sáàảãạăắằẳẵặâấầẩẫậéèẻẽẹêếềểễệíìỉĩịóòỏõọôốồổỗộơớờởỡợúùủũụưứừửữựýỳỷỹỵđÁÀẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÉÈẺẼẸÊẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÝỲỶỸỴĐ1234567890-_@]+$/u.test(input.value)) {
+                            alert(`Invalid ${placeholder}: Please enter a pasword have letter, number and symboy _-&`);
                             isFormValid = false;
                         } else {
                             console.log(`${placeholder}: ${input.value}`);
@@ -38,11 +36,6 @@ function showInfo() {
                             isFormValid = false;
                         } else {
                             console.log(`${placeholder}: ${input.value}`);
-                            alert(`Đăng nhập thành công`)
-                            function newDoc() {
-                                window.location.assign("https://crepmc.github.io/Nhan-SPCK.io/")
-                            }
-                            newDoc()
                         }
                     }
                 }
@@ -51,6 +44,11 @@ function showInfo() {
             if (isFormValid) {
                 // Proceed with further actions (e.g., submitting the form)
                 console.log("Form is valid. Proceed with submission.");
+                alert(`Đăng nhập thành công`)
+                function newDoc() {
+                    window.location.assign("https://crepmc.github.io/Nhan-SPCK.io/")
+                }
+                newDoc()
             }
         });
     }
