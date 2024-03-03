@@ -41,7 +41,7 @@ button {
     --grey-color: #af9494;
 }
 
-ul {
+.tet-gift-item ul {
     list-style: none;
 }
 
@@ -375,16 +375,15 @@ footer p {
     position: absolute;
     top: 160px;
     left: 5.151183971%;
-    margin-right: 80%;
-    padding: 10px;
+    padding: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
 }
 
-.filter-options label {
-    margin-top: 10px;
-    font-size: 20px;
+.subpage-base {
+    margin-left: 20px;
+    list-style: square;
 }
 
 .banner {
